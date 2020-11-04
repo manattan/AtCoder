@@ -17,7 +17,11 @@ def comp(s, t):
 
 # 文字列の入力
 for i in range(N):
-    arr[i] = input()
+    while(1):
+        arr[i] = input()
+        if len(arr[i]) == L:
+            break
+        print('文字数エラーです、再度入力してください')
     K += i
 
 for i in range(N):
