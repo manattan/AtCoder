@@ -25,10 +25,16 @@ int main(){
     }
     cout << mp["takanori"] << endl;
     // abe は存在していないので, falseを返す. この検索は0(1)
+    // この書き方だと, mp["abe"] = 0 が入ってしまうので, 存在するかは mp.find("abe")とする. 
     cout << mp["abe"] << endl;
 
     cout << isContained(mp,990529) << endl;
     cout << isContained(mp,980810) << endl;
+
+    
+    cout << mp.size() << endl;
+    mp.clear();
+    cout << mp.size() << endl;
 
     // ランダムな整数をkey と valにした時, 順に登録されていないことがわかる
     unordered_map<int,int > mpInt;
