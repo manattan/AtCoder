@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include <unordered_map>
 using namespace std;
 
 // お互いの文字列をソートして比較する, (多分)O(2NlogN) -> O(NlogN)
