@@ -13,7 +13,7 @@ int main(){
             res = str.at(0);
         }
         if (i == str.size()-1){
-            res = res + to_string(count);
+            res.append(to_string(count));
             break;
         }
 
@@ -21,7 +21,8 @@ int main(){
             isSame = false;
             count++;
         } else {
-            res = res + to_string(count) + str.at(i+1);
+            res.append(to_string(count));
+            res.push_back(str.at(i+1));
             count = 1;
         }
     }
